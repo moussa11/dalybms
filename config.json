@@ -15,7 +15,7 @@
         "mqtt_pass": "mqtt",
         "mqtt_client_id": "dalybms",
         "mqtt_discovery_prefix": "homeassistant",
-        "device": "/dev/ttyUSB0",
+        "device": "/dev/ttyUSB1",
         "device_id": "Daly-Smart-BMS",
         "cells_in_series": 4
     },
