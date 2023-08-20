@@ -89,7 +89,7 @@ def get_cell_balance(cell_count):
     json += '"maxCell":' + str(cells.index(max_v) + 1) + ','
     json += '"diff":' + str(round(max_v - min_v, 3))
     json += '}'
-    # print(json)
+    print(json)
     publish(CELLS_TOPIC + '/state', json)
 
 def get_battery_state():
@@ -133,7 +133,7 @@ def get_battery_status():
     json += '"load":' + load + ','
     json += '"cycles":' + str(cycles)
     json += '}'
-    # print(json)
+    print(json)
     publish(STATUS_TOPIC +'/state', json)
 
 def get_battery_temp():
@@ -154,7 +154,7 @@ def get_battery_temp():
     json += '"minTemp":' + str(minTemp) + ','
     json += '"minTempCell":' + str(minTempCell)
     json += '}'
-    # print(json)
+    print(json)
     publish(TEMP_TOPIC +'/state', json)
 
 while True:
